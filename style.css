@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;}
+
+:root{
+    /*Primary*/
+--Cyan: hsl(179, 62%, 43%);
+--Bright-Yellow: hsl(71, 73%, 54%);
+
+/*Neutral*/
+--Light-Gray: hsl(204, 43%, 93%);
+--Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+body{font-family: 'Karla', sans-serif;
+background: var(--Light-Gray);
+}
+
+.upr{
+    background:white;    
+    margin: 20% 20% 0% 20%;
+    border-radius: 10px 10px 0px 0px;
+    padding: 5%;
+}
+.lwr{
+    display: flex;
+    margin: 0% 20%;
+}
+.left{
+    background: var(--Cyan);
+    flex: 1;
+    padding: 10%;
+    border-radius: 0px 0px 0px 10px;
+}
+.right{
+    background: var(--Cyan);
+    flex: 1;
+    opacity: .5;
+    padding: 10%;
+    border-radius: 0px 0px 10px 0px;
+}
+h1{
+    color: var(--Cyan);
+    margin-bottom: 5%;
+   
+}
+p{
+    font-size: larger;
+}
+.para1{
+    color: var(--Bright-Yellow);
+    margin-bottom: 2.5%;
+}
+.para2{
+    color: var(--Grayish-Blue);
+}
+h2, h3{
+    color: white;
+    font-size: larger;
+    font-weight: 700;
+    margin-bottom: 5%;
+}
+.spn1{
+    color: white;
+    font-size: xx-large;
+    font-weight: 700;
+}
+.spn2{
+    color: var(--Light-Gray);
+    padding-left: 5%;    
+}
+.spn3{
+    color: white;
+    font-size: 16px;  
+    
+}
+
+button{
+    margin-top: 20%;
+    padding: 10% 35%;
+    color: white;
+    background: var(--Bright-Yellow);
+    border: none;
+    border-radius: 10px;
+    font-size: large;
+    font-weight: 700;
+}
+li {
+    list-style: none;
+    color: white;
+    font-size: larger;
+}
+footer{
+    margin-top: 20%;
+}  
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    @media screen and (max-width: 600px) {
+       .upr{margin: 10% 10% 0% 10%;
+        }
+
+        .lwr{flex-direction: column;
+            margin: 0% 10% 10% 10%;}
+        .right{
+            border-radius: 0px 0px 10px 10px;
+           
+        }
+        .left{border-radius: 0px;}
+        button{font-size: 22px;
+            padding: 10% 30%;}
+        footer{
+            margin-top: 10%;
+        }  
+    }
