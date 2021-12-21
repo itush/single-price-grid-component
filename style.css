@@ -20,9 +20,9 @@ background: var(--Light-Gray);
 
 .upr{
     background:white;    
-    margin: 20% 20% 0% 20%;
+    margin: 10% 20% 0% 20%;
     border-radius: 10px 10px 0px 0px;
-    padding: 5%;
+    padding: 2.5%;
 }
 .lwr{
     display: flex;
@@ -31,14 +31,14 @@ background: var(--Light-Gray);
 .left{
     background: var(--Cyan);
     flex: 1;
-    padding: 10%;
+    padding: 5%;
     border-radius: 0px 0px 0px 10px;
 }
 .right{
     background: var(--Cyan);
     flex: 1;
     opacity: .5;
-    padding: 10%;
+    padding: 5%;
     border-radius: 0px 0px 10px 0px;
 }
 h1{
@@ -62,6 +62,9 @@ h2, h3{
     font-weight: 700;
     margin-bottom: 5%;
 }
+.para3{
+    margin: 10% 0%;
+}
 .spn1{
     color: white;
     font-size: xx-large;
@@ -71,15 +74,14 @@ h2, h3{
     color: var(--Light-Gray);
     padding-left: 5%;    
 }
-.spn3{
+.spn3{   
     color: white;
-    font-size: 16px;  
-    
+    font-size: 16px;      
 }
 
 button{
-    margin-top: 20%;
-    padding: 10% 35%;
+    
+    padding: 5% 35%;
     color: white;
     background: var(--Bright-Yellow);
     border: none;
@@ -93,24 +95,29 @@ li {
     font-size: larger;
 }
 footer{
-    margin-top: 20%;
+    margin-top: 10%;
 }  
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
 
     @media screen and (max-width: 600px) {
        .upr{margin: 10% 10% 0% 10%;
+        padding: 5%;
         }
+        h1 {
+            font-size: x-large;
+        }
+        .para2{font-size: 16px;}
 
         .lwr{flex-direction: column;
             margin: 0% 10% 10% 10%;}
         .right{
-            border-radius: 0px 0px 10px 10px;
-           
+            border-radius: 0px 0px 10px 10px;                
         }
-        .left{border-radius: 0px;}
+        .left{border-radius: 0px;
+        }
         button{font-size: 22px;
-            padding: 10% 30%;}
+            padding: 5% 30%;}
         footer{
             margin-top: 10%;
         }  
